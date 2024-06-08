@@ -60,12 +60,13 @@ page1Content.addEventListener('mouseleave', function() {
 customCursor();
 
 function page2Animation() {
-    gsap.from(".elem h1", {
-        y:120,
+    gsap.from(".elem h1, #page2-top h3, #page2-top h4", {
+        y:100,
         stagger: 0.2,
+        opacity: 0,
         duration: 1,
         scrollTrigger: {
-            tripper: "#page2",
+            trigger: "#page2",
             scroller: "#main",
             start: "top 47%",
             end: "top 46%",
