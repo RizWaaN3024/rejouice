@@ -148,10 +148,34 @@ nav h4 {
 #page3-elements .box {
     height: 100%;
     width: 32.5%;
+    position: relative;
+}
+#page3-elements .box img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear 0.6s;
 }
 #page3-elements .box video {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+#page3-elements .box:hover img{
+    opacity: 0;
+}
+/* page 4 */
+#page4 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page4 video {
+    height: 100%;
 }
