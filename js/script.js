@@ -114,3 +114,9 @@ tl.to("#loader", {
 tl.to("#loader", {
     display: "none"
 })
+tl.from("#page1-content h1 span", {
+    y: 100,
+    opacity: 0,
+    stagger: 0.1,
+    duration: 0.5
+})
