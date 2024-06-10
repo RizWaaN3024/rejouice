@@ -77,12 +77,40 @@ function page2Animation() {
 
 page2Animation();
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: true
-    }
-  });
+function swiperAnimation() {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: true
+        }
+      });
+}
+swiperAnimation();
+
+// loader
+var tl = gsap.timeline();
+
+tl.from("#loader h3", {
+    x:40,
+    opacity: 0,
+    duration:1,
+    stagger: 0.1
+})
+
+tl.to("#loader h3", {
+    opacity:0,
+    x: -40,
+    duration: 1,
+    stagger: 0.1
+})
+
+tl.to("#loader", {
+    opacity: 0
+})
+
+tl.to("#loader", {
+    display: "none"
+})
