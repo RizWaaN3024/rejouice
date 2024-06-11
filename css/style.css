@@ -247,3 +247,82 @@ nav h4 {
     gap: 10px;
     font-size: 2vw;
   }
+
+  footer {
+    height: 100vh;
+    width: 100%;
+    padding: 0 2vw;
+    position: relative;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #footer-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #left-content h3{
+    font-size: 3rem;
+    color: #FFFCF1;
+  }
+
+  #left-content button {
+    margin-top: 1.5rem;
+    padding: 1.7rem 1.7rem;
+    font-size: 1rem;
+    color: #FFFCF1;
+    background-color: #111;
+    border-radius: 5rem;
+  }
+  #left-content button:hover {
+    background-color: #FFFCF1;
+    color: #111;
+    cursor: pointer;
+    transition: all ease 0.5s;
+  }
+
+  #right-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFCF1;
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #FFFCF1;
+  }
+  #footer-bottom h1 span {
+    display: inline-block;
+  }
+  #footer-bottom h1 {
+    color: #FFFCF1;
+    font-family: rejoy;
+    font-size: 25vw;
+    font-weight: 100;
+    line-height: 27vw;
+  }
