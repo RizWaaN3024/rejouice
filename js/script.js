@@ -120,3 +120,21 @@ tl.from("#page1-content h1 span", {
     stagger: 0.1,
     duration: 0.5
 })
+
+function page3Animation() {
+ gsap.from('#page3-top h2', {
+    y: 100,
+    stagger: 0.2,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#page3",
+        scroller: "#main",
+        start: "top 47%",
+        end: "top 46%",
+        scrub: 2
+    }
+ })
+}
+
+page3Animation();
