@@ -316,12 +316,15 @@ nav h4 {
     font-size: 1.5rem;
     color: #FFFCF1;
   }
+  #footer-bottom {
+    overflow: hidden;
+  }
   #footer-bottom h1 span {
     display: inline-block;
   }
   #footer-bottom h1 {
     color: #FFFCF1;
-    font-family: rejoy;
+    font-family: "rejoy";
     font-size: 25vw;
     font-weight: 100;
     line-height: 27vw;

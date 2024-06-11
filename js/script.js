@@ -139,3 +139,47 @@ function page3Animation() {
 
 page3Animation();
 
+
+function footerAnimation() {
+    gsap.from("#footer-bottom h1 span", {
+        y:-100,
+        opacity: 0,
+        stagger: 0.1,
+        duration: 0.5,
+        scrollTrigger: {
+            trigger: "#footer",
+            scroller: "#main",
+            start: "top 47%",
+            end: "top 46%",
+            scrub: 2
+        }
+    })
+
+    gsap.from("#left-content h3, #left-content button", {
+        y: -100,
+        opacity: 0,
+        duration: 0.5,
+        scrollTrigger: {
+            trigger: "#footer",
+            scroller: "#main",
+            start: "top 47%",
+            end: "top 46%",
+            scrub: 2
+        }
+    })
+
+    gsap.from("#right-content .nav-links, #right-content .social-links", {
+        y: -100,
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: "#footer",
+            scroller: "#main",
+            start: "top 47%",
+            end: "top 46%",
+            scrub: 2
+        }
+    })
+}
+
+footerAnimation();
