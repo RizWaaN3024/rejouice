@@ -172,6 +172,7 @@ function footerAnimation() {
         y: -100,
         opacity: 0,
         duration: 1,
+        delay: 0.5,
         scrollTrigger: {
             trigger: "#footer",
             scroller: "#main",
